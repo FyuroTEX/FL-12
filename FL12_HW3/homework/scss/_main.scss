@@ -1,0 +1,104 @@
+body,
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+body {
+  background-color: $bgColor;
+}
+@mixin btn {
+  background-color: $btnColor;
+  padding: 13px 40px;
+  font-family: $title;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: $white;
+}
+@mixin link {
+  color: $white;
+  font-size: 20px;
+  font-family: $text;
+}
+.header {
+  background-image: $headerBgImage;
+  min-height: 720px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0% 0% 40% 0%;
+  &-wrap {
+    padding-top: 20px;
+    margin: 0px 193px;
+    width: 660px;
+  }
+  &_heading {
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 75px;
+    font-family: $title;
+  }
+  &_text {
+    font-family: $text;
+    margin: 65px 0px;
+  }
+  button {
+    @include btn;
+  }
+  a {
+    @include link;
+    margin-left: 155px;
+  }
+}
+.section {
+  width: 1200px;
+  margin: 50px auto 210px;
+  &_text {
+    text-align: center;
+    font-family: $text;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  &_card {
+    &_wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+    display: flex;
+    background-color: $cardColor;
+    color: $white;
+    padding: 20px;
+    max-height: 330px;
+    border-radius: 5px;
+    margin-top: 25px;
+    &_img {
+        max-width: 460px;
+        width: 100%;
+    }
+    &_right_container {
+      width: 455px;
+      margin: auto;
+      line-height: 20px;
+      font-family: $text;
+      a{ 
+          display: block;
+          margin: 30px 0;
+          text-align: center;
+      }
+    }
+    &_heading {
+      text-align: center;
+      margin: 20px 0px 40px;
+      font-size: 20px;
+    }
+  }
+  
+}
