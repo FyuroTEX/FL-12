@@ -114,8 +114,8 @@ body,
   margin-bottom: 65px;
 }
 .post + .post {
- border-top: 1px solid #f0f0f0;
- padding-top: 85px;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 85px;
 }
 
 .post img {
@@ -163,7 +163,10 @@ body,
   height: 355px;
   color: #cccccc;
 }
-
+.container {
+  margin: 0 auto;
+  max-width: 945px;
+}
 .footer > .container {
   display: flex;
   padding-top: 100px;
