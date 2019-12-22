@@ -12,5 +12,5 @@ if (isNaN(s) || a <= 0 || b <= 0 || c <= 0 || s === 0) {
 } else if (a === b || b === c || c === a) {
   console.log('Isosceles triangle');
 } else {
-  console.log('Normal triangle');
+  console.log('Scalene triangle');
 }
