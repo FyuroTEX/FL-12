@@ -3,10 +3,8 @@ a = +prompt('A');
 b = +prompt('B');
 c = +prompt('C');
 result = b * b - four * a * c;
-if (isNaN(a) || isNaN(b) || isNaN(c)) {
+if (isNaN(a) || isNaN(b) || isNaN(c) || a, b, c === 0 || a === 0 && b !== 0 && c !== 0) {
     console.log('Invalid input data');
-} else if (a === 0 && b !== 0 && c !== 0) {
-    console.log(`a = 0`);
 } else if (result === 0) {
     console.log(`x = ${result}`);
 } else if (result > 0) {
