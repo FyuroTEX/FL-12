@@ -1,4 +1,4 @@
-let a, b, c, s;
+let a, b, c;
 a = +prompt('A');
 b = +prompt('B');
 c = +prompt('C');
