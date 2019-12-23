@@ -4,7 +4,7 @@ b = +prompt('B');
 c = +prompt('C');
 result = b * b - four * a * c;
 if ( isNaN(a) || isNaN(b) || isNaN(c) ) {
-    console.log('Invalid input data')
+    console.log('Invalid input data');
 } else if (result === 0) {
     console.log(`x = ${result}`);
 } else if (result > 0) {
@@ -12,6 +12,6 @@ if ( isNaN(a) || isNaN(b) || isNaN(c) ) {
     x2 = (minus * b - Math.sqrt(result)) / (a * two);
     console.log(`x1 = ${x1}, x2 = ${x2}`);
 } else {
-    console.log(`No solution `);
+    console.log(`No solution`);
 }
 
