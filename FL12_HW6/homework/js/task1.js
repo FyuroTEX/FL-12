@@ -6,7 +6,7 @@ result = b * b - four * a * c;
 if (isNaN(a) || isNaN(b) || isNaN(c)) {
     console.log('Invalid input data');
 } else if (a === 0 && b !== 0 && c !== 0) {
-    console.log(`a === 0`);
+    console.log(`a = 0`);
 } else if (result === 0) {
     console.log(`x = ${result}`);
 } else if (result > 0) {
