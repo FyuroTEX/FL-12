@@ -1,10 +1,16 @@
-let a, b, c, s, p, d = 2;
-a = +prompt('A', '');
-b = +prompt('B', '');
-c = +prompt('C', '');
+let a, b, c, s, p, preS, d = 2;
+a = +prompt('A','');
+b = +prompt('B','');
+c = +prompt('C','');
 p = (a + b + c) / d;
-s = Math.sqrt(p * (p - a) * (p - b) * (p - c));
-if (isNaN(s) || a <= 0 || b <= 0 || c <= 0 || s === 0) {
+preS = p * (p - a) * (p - b) * (p - c);
+s = Math.sqrt(preS);
+if (isNaN(p)) {
+  alert('input values should be ONLY numbers ');
+ }else if (a <= 0 || b <= 0 || c <= 0) {
+  alert('A triangle must have 3 sides with a positive definite length');
+}else if (preS < 0 || s === 0) {
+  alert('Triangle doesn’t exist');
   console.log('Triangle doesn’t exist');
 } else if (a === b && b === c && c === a) {
   console.log('Eequivalent triangle');
